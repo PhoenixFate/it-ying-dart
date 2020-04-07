@@ -1,24 +1,24 @@
 
 class Rectangle{
-  num _height;
-  num _width;
+  num height;
+  num width;
 
-  Rectangle(this._height,this._width);
+  Rectangle(this.height,this.width);
   // 实例化的默认值
   // Rectangle():_height=20,_width=30{};
 
 
   get Height{
-    return this._height;
+    return this.height;
   }
 
   set Height(value){
-    this._height=value;
+    this.height=value;
   }
 
   @override
   String toString() {
-    return "height: ${_height}; width: ${_width}";
+    return "height: ${height}; width: ${width}";
   }
 
 }
@@ -32,5 +32,7 @@ main(List<String> args) {
   r.Height=99.0;
   print(r.Height);
 
-
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  Rectangle rr= new Rectangle(3.2, 23.2)..Height=24.32;
+  print(rr);
 }
