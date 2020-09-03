@@ -1,4 +1,8 @@
 # 个人学习使用
+
+## 代码运行
+- dart xxx.dart
+
 ## 开发工具
 - Visual Code
 ## dart插件

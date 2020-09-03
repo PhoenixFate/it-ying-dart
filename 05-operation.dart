@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 main(List<String> args) {
   int a = 13;
   int b = 5;
@@ -24,6 +26,7 @@ main(List<String> args) {
 
   // b??=23 表示b为空，则把23赋值给b
   var t;
+  print("t: " + t.toString());
   t ??= 23;
   print("t: " + t.toString());
   var t2 = 19;
@@ -72,10 +75,7 @@ main(List<String> args) {
   }
 
   // ?? 运算符
-  var gg=22;
-  var ff=gg??99; //gg为空执行后面
-  print("ff: "+ff.toString());
-
-
-
+  var gg = 22;
+  var ff = gg ?? 99; //gg为空执行后面
+  print("ff: " + ff.toString());
 }

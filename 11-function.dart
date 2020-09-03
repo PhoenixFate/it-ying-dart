@@ -30,24 +30,22 @@ void main(List<String> args) {
     print("我是自执行方法");
   })();
 
-
   //闭包
   //让变量常驻内存，并且不污染全局内存
-  f8(){
-    var a=123;
+  f8() {
+    var a = 123;
     //方法里面嵌套方法
     //返回一个方法
-    return(){
+    return () {
       a++;
       print(a);
     };
   }
-  var bb=f8();
-  bb();
-  bb();
-  bb();
 
-
+  var bb = f8();
+  bb();
+  bb();
+  bb();
 }
 
 String test() {
@@ -92,7 +90,7 @@ void f2() {
 }
 
 //匿名方法
-var myPrint = () {
+Function myPrint = () {
   print("my print");
   print("my print2");
 };
